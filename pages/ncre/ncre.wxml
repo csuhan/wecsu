@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="header">
+    <view><image src="/imgs/ncre/ncre.png"></image></view>    
+    <view class="title">计算机等级查询</view>
+  </view>
+  <view class="zan-panel">
+    <view class="zan-cell">暂未开放查询</view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+.page{
+   background-color: #eee; 
+   min-height: 100vh;
+}
+.header{
+  margin: 40rpx;
+  height: 100rpx;
+  display: inline-flex;
+  align-items:center; 
+  align-content: center;
+  justify-content: space-between
+}
+.title{
+  font-size: 50rpx;
+  color: #6200ea;
+}
+.header image{
+  width: 100rpx;
+  height: 100rpx;
+}

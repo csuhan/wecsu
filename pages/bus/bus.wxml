@@ -1,0 +1,50 @@
+<import src="/zan/field/index.wxml" />
+<view class="page">
+  <view class="header">
+    <view><image src="/imgs/bus/bus.png"></image></view>    
+    <view class="title">校车查询</view>
+  </view>
+  <view class="zan-panel">
+     <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">起始站点</view>
+      <picker
+        mode="selector"
+        class="zan-field__input zan-cell__bd"
+        range="{{ config.stations }}"
+        value="{{ startStationIndex }}"
+        bindchange="onStart"
+      >
+        {{ config.stations[startStationIndex] }}
+      </picker>
+    </view>
+      <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">到达站点</view>
+      <picker
+        mode="selector"
+        class="zan-field__input zan-cell__bd"
+        range="{{ config.stations }}"
+        value="{{ endStationIndex }}"
+        bindchange="onEnd"
+      >
+        {{ config.stations[endStationIndex] }}
+      </picker>
+    </view>
+
+     <view class="zan-cell zan-field">
+      <view class="zan-cell__hd zan-field__title">出发时间</view>
+      <picker
+        mode="selector"
+        class="zan-field__input zan-cell__bd"
+        range="{{ config.times }}"
+        value="{{ timeValIndex }}"
+        bindchange="onTime"        
+      >
+        {{ config.times[timeValIndex] }}
+      </picker>
+      </view>
+      <view class="zan-btns">
+      <button class="zan-btn  btn-search" bindtap="search">查询</button>
+    </view>
+    </view>
+  </view>
+ 

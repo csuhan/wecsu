@@ -1,0 +1,9 @@
+<view class="page">
+  <view class="header">
+    <view><image src="/imgs/exam/exam.png"></image></view>    
+    <view class="title">考试查询</view>
+  </view>
+  <view class="zan-panel">
+    <view class="zan-cell">暂无考试，将在期末开放查询</view>
+  </view>
+</view>

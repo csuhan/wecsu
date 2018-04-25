@@ -1,0 +1,48 @@
+.app-page{
+   background-color: #eee; 
+}
+.app-hd{
+  background-color: white;
+}
+.app-grids{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.app-grid{
+  margin: 20rpx;
+}
+.app-grid__icon{
+  padding: 10rpx;
+  width:80rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  box-shadow: #fdfdfd 2rpx 2rpx 5rpx; 
+  border: solid #fdfdfd 5rpx; 
+}
+.app-grid__label{
+  font-size: 24rpx;
+  text-align: center;
+}
+.app-grid_active{
+  background-color: none;
+}
+.app-warper{
+}
+.app-logo{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 15px;
+  padding: 5px;
+}
+.app-class-no{
+  font-size: 16px;
+  color: #d4237a;
+  margin-right: 20px;
+}
+.app-class-content{
+
+}

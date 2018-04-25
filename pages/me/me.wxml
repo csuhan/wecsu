@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="pagewarper">
+    <view class="circle-head">
+      <image mode='scaleToFill' wx:if="{{userInfo!=null}}" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="zan-panel zan-panel--without-border">
+      <navigator class="zan-cell" url="/pages/me/account">
+        <view class="zan-icon zan-icon-contact me-icon" style="color:#2962FF;"></view>
+        <view class="zan-cell__bd">信息绑定</view>
+      </navigator>
+      <navigator class="zan-cell" url="/pages/me/setting">
+        <view class="zan-icon zan-icon-setting me-icon" style="color:#6200ea;"></view>
+        <view class="zan-cell__bd">通知设置</view>
+      </navigator>
+      
+       <navigator class="zan-cell" url="/pages/me/fellback">
+        <view class="zan-icon zan-icon-chat me-icon" style="color:#d4237a;"></view>
+        <view class="zan-cell__bd">意见反馈</view>
+      </navigator>
+       <navigator class="zan-cell" url="/pages/me/about">
+        <view class="zan-icon zan-icon-question me-icon" style="color:#00c853;"></view>
+        <view class="zan-cell__bd">关于我们</view>
+      </navigator>
+    </view>
+
+  </view>
+</view>

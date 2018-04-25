@@ -1,0 +1,48 @@
+.header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+}
+.zan-tab__bd--scroll .zan-tab__item {
+  min-width: 50px;
+}
+.header-info{
+  display: inline-flex;
+  width: 100vw;
+}
+.header-info>view{
+  margin: auto 10rpx;
+}
+.cls-list{
+  margin-top: 80px;
+}
+.cls-list-item{
+  display: inline-flex;
+  align-content: center;
+  min-width: 100vw;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  min-height: 30px;
+}
+.cls-list-item-title{
+  min-width: 200rpx;
+  max-width: 200rpx; 
+  color: #fff;
+  background-color: #2962ff;
+}
+.cls-list-item-content{
+  width: 100rpx;
+  color: white;
+
+}
+.cls-list-item-title,.cls-list-item-content{
+  border-bottom: 1px solid #eee;  
+  border-right: 1px solid #eee;
+}
+.cls-list-item-header>view{
+  color: #fff;
+  background-color: #2962ff;
+}

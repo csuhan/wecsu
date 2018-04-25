@@ -1,0 +1,6 @@
+.header{
+  font-size: 40rpx;
+  color: #d4237a;
+  padding: 20rpx;
+  margin-top: 50rpx;
+}

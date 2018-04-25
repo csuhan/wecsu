@@ -1,0 +1,25 @@
+<view class="page zan-panel" wx:if="{{news!=''}}">
+  <view hover-class='news-item-hover' class="zan-cell zan-cell--access" wx:for="{{news}}" wx:key="ID" wx:for-item="news" id="{{index}}" bindtap='showDetail'>
+    <view class="zan-cell__bd">
+    <view class="zan-cell__text">
+      {{news.Title}}
+    </view>
+    <view class="zan-cell__desc news-item--ft">
+      <view class="time"><view class="zan-icon zan-icon-clock"></view>
+      {{news.Time}}
+      </view>     
+      <view class="viewer"><view class="zan-icon zan-icon-browsing-history"></view>
+      {{news.ViewCount}}
+      </view>
+      <view class="dept"><view class="zan-icon zan-icon-contact"></view>
+      {{news.Dept}}
+      </view>
+    </view>
+    </view>
+    <view class="zan-cell__ft"></view>
+  </view>
+  <view class="zan-cell zan-cell--access">
+  <view class="zan-cell__bd"></view>
+  <view class="zan-cell__ft zan-c-green" bindtap='showMore'>查看更多</view>
+  </view>
+</view>

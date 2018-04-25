@@ -1,0 +1,26 @@
+.page{
+   background-color: #eee; 
+}
+.item-icon,.item-title{
+  color: #00bfa5;
+}
+
+.zan-tag{
+  margin: auto 10rpx;
+}
+.station{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.station-item{
+  font-size: 24rpx;
+  width: 24rpx;
+  margin: 0 30rpx;
+  min-height: 400rpx;
+}
+.nores{
+  color: #00bfa5;
+  text-align: center; 
+}

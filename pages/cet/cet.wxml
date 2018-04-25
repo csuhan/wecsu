@@ -1,0 +1,23 @@
+<import src="../../zan/field/index.wxml" />
+<view class="page">
+  <view class="header">
+    <view><image src="/imgs/cet/cet.png"></image></view>    
+  </view>
+  <form bindsubmit='cetQuery'>
+    <view class="zan-panel">
+       <template
+        is="zan-field"
+        data="{{ ...form.xuehao }}"></template>
+      <template
+        is="zan-field"
+        data="{{ ...form.xm }}"></template>
+      <view class="zan-btns">
+        <button
+          class="zan-btn  btn-search"
+          formType="submit">查询</button>
+      </view>
+    </view>
+  </form>
+  
+</view>
+

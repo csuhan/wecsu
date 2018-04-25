@@ -1,0 +1,20 @@
+  <view class="page">
+    <view class="header">
+      <view><image src="/imgs/grade/grade.png"></image></view>    
+      <view class="title">成绩查询</view>
+    </view>
+    <view class="zan-panel">
+      <view   wx:for="{{grades}}" wx:key="ClassNo" wx:for-item="grade">
+          <view class="zan-cell" wx:if="{{grades[index].FirstTerm!=grades[index-1].FirstTerm}}">
+            <view class="zan-cell__bd term-title">{{grade.FirstTerm}}</view>
+          </view>
+          <navigator url="/pages/grade/gradedetail?id={{index}}">
+            <view class="zan-cell zan-cell--access">
+              <view class="zan-cell__bd">{{grade.ClassName}}</view>
+              <view class="zan-cell__ft">{{grade.Grade}}</view>
+            </view>
+         </navigator>
+      </view>          
+    </view>
+  </view>
+  

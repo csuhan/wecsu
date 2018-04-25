@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="header">
+    <view><image src="/imgs/rank/rank.png"></image></view>    
+    <view class="title">排名查询</view>
+  </view>
+  <view class="zan-panel" wx:for="{{ranks}}" wx:key="Term" wx:for-item="rank">
+    <view class="zan-cell">
+     <view class="zan-cell__icon zan-icon zan-icon-clock term-icon"></view>
+      <view class="zan-cell__bd zan-font-12">{{rank.Term}}</view>
+    </view>
+    <view class="zan-row">
+      <view class="zan-col zan-col-8 rank-item">
+        <view class="rank-item-content">{{rank.ClassRank}}</view>
+        <view  class="zan-font-12 zan-c-gray-darker">专业排名</view>
+      </view>
+      <view class="zan-col zan-col-8 rank-item">
+        <view class="rank-item-content">{{rank.AverScore}}</view>
+        <view  class="zan-font-12 zan-c-gray-darker">平均分</view>
+      </view>
+      <view class="zan-col zan-col-8 rank-item">
+        <view class="rank-item-content">{{rank.TotalScore}}</view>
+        <view class="zan-font-12 zan-c-gray-darker">学分</view>
+      </view>      
+    </view>
+  </view>
+</view>

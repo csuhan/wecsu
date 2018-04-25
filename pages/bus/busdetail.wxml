@@ -1,0 +1,21 @@
+<view class="page">
+  <view  wx:if="{{buses[0].StartTime!=''}}">
+    <view class="zan-panel" wx:for="{{buses}}" wx:key="this" wx:for-item="bus">
+      <view class="zan-cell">
+      <view class="zan-cell__icon zan-icon zan-icon-clock item-icon"></view>
+        <view class="zan-cell__bd zan-font-16 item-title">
+        {{bus.StartTime}}
+        </view>
+        <view class="zan-tag zan-tag--plain zan-tag--primary">{{bus.RunTime}}</view>
+        <view class="zan-tag zan-tag--plain zan-tag--warn">{{bus.Num}}辆</view>      
+        <view class="zan-tag zan-tag--plain zan-tag--danger">{{bus.Seat}}座</view>          
+      </view>
+      <view class="zan-cell station">
+        <view wx:for="{{bus.Stations}}" wx:for-item="station" wx:key="this"
+        class="station-item {{bus.Start==station?'zan-c-green':''}} {{bus.End==station?'zan-c-red':''}}">{{station}}</view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="zan-panel zan-panel--without-border zan-font-16 nores">没有查询到车辆</view>
+</view>
+                   

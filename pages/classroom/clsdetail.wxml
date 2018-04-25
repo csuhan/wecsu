@@ -1,0 +1,23 @@
+<import src="/zan/tab/index.wxml" />
+<view class="header">
+  <view class="header-info zan-font-12 zan-c-gray-darker">
+    <view class="zan-tag zan-tag--primary zan-tag--plain">2017-2018-2 第{{zc}}周</view>
+    <view class="zan-tag zan-tag--primary zan-tag--plain">{{jxl.XQ.Name}}</view>    
+    <picker bindchange="changeDay" value="{{day}}" range="{{weekday}}">
+    <view class="zan-tag zan-tag--primary zan-tag--plain">
+      {{weekday[day]}}
+    </view>
+  </picker>
+  </view>
+  <template is="zan-tab" data="{{...tab,componentId:'headTab'}}"></template> 
+</view>
+<view class="cls-list" wx:if="{{freetimes!=''}}">
+  <view class="cls-list-item cls-list-item-header">
+    <view class="cls-list-item-title">节次</view>
+    <view wx:for="{{['1-2','3-4','5-6','7-8','9-10']}}" wx:key="this" class="cls-list-item-content">{{item}}</view> 
+  </view>
+  <view class="cls-list-item" wx:for="{{freetimes}}" wx:key="name" wx:for-item="freetime">
+    <view class="cls-list-item-title">{{freetime.name}}</view>
+    <view wx:for="{{freetime.freetime}}" wx:key="this" class="cls-list-item-content" style="background-color:{{item==true?'green':'red'}}">{{item==true?'空':'课'}}</view>  
+  </view>
+</view>

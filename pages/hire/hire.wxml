@@ -1,0 +1,19 @@
+<import src="/zan/tab/index.wxml" />
+<view class="header">
+  <template is="zan-tab" data="{{...config,componentId:'headTab'}}"></template> 
+</view>
+<view style="height:40px;"></view>
+<view class="zan-panel zan-panel--without-border">
+  <view class="zan-cell" wx:for="{{jobs}}" wx:key="Link" wx:for-item="job">
+    <view class="zan-cell__bd">
+      <view class="zan-cell__text">{{job.Title}}</view>
+      <view class="zan-cell__desc">{{job.Place}}</view>
+    </view>
+    <view class="zan-cell__ft">{{job.Time}}</view>
+  </view>
+  <view class="zan-cell zan-cell zan-cell--access" wx:if="{{jobs!=''}}">
+    <view class="zan-cell__bd"></view>
+    <view class="zan-cell__ft" style="color:#00c853;" bindtap="loadmore">查看更多</view>
+  </view>
+</view>
+

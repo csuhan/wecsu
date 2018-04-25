@@ -1,0 +1,28 @@
+  <view class="page">
+    <view class="header">
+      <view><image src="/imgs/lib/lib.png"></image></view>    
+      <view class="title">图书馆</view>
+    </view>
+   <navigator class="zan-panel zan-panel--without-border lib-box" url="/pages/lib/libreloan">
+    <view class="zan-row">
+      <view class="zan-col zan-col-6 lib-item-left">
+        <image src="/imgs/lib/loan.png"></image>
+      </view>
+      <view class="zan-col zan-col-13 lib-item-text">图书续借</view>
+      <view class="zan-col zan-col-4  lib-item-right">
+        <image src="/imgs/lib/arrow-right.png"></image>
+      </view>      
+    </view>
+   </navigator>
+   <navigator class="zan-panel zan-panel--without-border lib-box" url="/pages/lib/libsearch">
+    <view class="zan-row">
+      <view class="zan-col zan-col-6 lib-item-left">
+        <image src="/imgs/lib/mark.png"></image>
+      </view>
+      <view class="zan-col zan-col-13 lib-item-text">馆藏查询</view>
+      <view class="zan-col zan-col-4  lib-item-right">
+        <image src="/imgs/lib/arrow-right.png"></image>
+      </view>      
+    </view>
+   </navigator>
+  </view>

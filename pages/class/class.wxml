@@ -1,0 +1,38 @@
+<view class="zan-row">
+  <view class="zan-col zan-col-22">
+    <picker bindchange="bindWeeksChange" value="{{week}}" range="{{weeks}}" class='class-week zan-font-16'>
+      <view class="picker">
+      {{weeks[week]}}
+      </view>
+    </picker>
+  </view>
+  <view class="zan-col zan-col-2">
+    <view class="zan-icon zan-icon-setting"></view>
+  </view>
+</view>
+<view>
+  <view class="class-row class-row_hd">
+    <view class="class-row_hd-title" wx:for="{{weekDates}}" wx:key="Date" wx:for-item="weekdate" style="color:{{weekdate.isToday?'#1659c3':''}}">
+      <view>{{weekdate.Week}}</view>
+      <view>{{weekdate.Date}}</view>
+    </view>
+  </view>
+  <view class="class-row" wx:for="{{[1,2,3,4,5,6]}}" wx:key="this" wx:for-index="i"  wx:if="{{hasClass}}">
+    <view class="class-row_time-title">{{item}}</view>
+    <view wx:for="{{[1,2,3,4,5,6,7]}}" wx:for-index="j" wx:key="this">
+      <view class="class-row_item" style="background-color: {{classes[i*7+j][0].Color}};" data-id="{{i*7+j}}" bindtap='showClassDetail' wx:if="{{classes[i*7+j][0].ClassName!=''}}">{{classes[i*7+j][0].ClassName+"@"+classes[i*7+j][0].Place}}</view>
+    <view wx:else class="class-row_item class-row_item-hidden"></view>
+    </view>
+  </view>
+</view>
+<view class="class-detail" wx:if="{{popClassVisible}}"  bindtap='hidePopClass'>
+  <view class="class-pop-box">
+    <view class="class-pop-box-item" style="background-color:{{class.Color}};" wx:for="{{classes[popClassId]}}" wx:key="ClassName" wx:for-item="class">
+    <view class="class-pop-box-item-title zan-font-16">{{class.ClassName}}</view>
+    <view class="class-pop-box-item-desc zan-font-12">教师: {{class.Teacher}}</view>
+    <view class="class-pop-box-item-desc zan-font-12">地点: {{class.Place}}</view>
+    <view class="class-pop-box-item-desc zan-font-12">周次: {{class.Weeks}}</view>
+    
+    </view>
+  </view>
+</view>

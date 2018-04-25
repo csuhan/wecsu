@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/class/class",
+    "pages/grade/grade",
+    "pages/grade/gradedetail",
+    "pages/rank/rank",
+    "pages/bus/bus",
+    "pages/bus/busdetail",
+    "pages/hire/hire",
+    "pages/exam/exam",
+    "pages/me/account",
+    "pages/lib/lib",
+    "pages/lib/libreloan",
+    "pages/lib/libsearch",
+    "pages/cet/cet",
+    "pages/cet/cetdetail",
+    "pages/ncre/ncre",
+    "pages/me/me",
+    "pages/news/news",
+    "pages/news/newsdetail",
+    "pages/classroom/classroom",
+    "pages/classroom/clsdetail",
+    "pages/me/setting",
+    "pages/me/fellback",
+    "pages/me/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "we中南",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/tabbar/home@dark.png",
+        "selectedIconPath": "imgs/tabbar/home@black.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "课表",
+        "iconPath": "imgs/tabbar/class@dark.png",
+        "selectedIconPath": "imgs/tabbar/class@black.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "imgs/tabbar/news@dark.png",
+        "selectedIconPath": "imgs/tabbar/news@black.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "imgs/tabbar/person@dark.png",
+        "selectedIconPath": "imgs/tabbar/person@black.png"
+      }
+    ]
+  }
+}

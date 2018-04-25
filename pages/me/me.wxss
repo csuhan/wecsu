@@ -1,0 +1,65 @@
+.pagewarper{
+  position: absolute;
+  z-index: 999;
+}
+.circle-head{
+  width: 100vw;
+  height: 200rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  background-color: #2962FF;  
+}
+.circle-head image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+}
+.me-icon{
+  margin-right:20rpx;
+  font-size:20px;
+}
+
+
+.page {
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2962FF;
+    overflow: hidden;
+}
+.page:before, .page:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        min-width: 300vw;
+        min-height: 300vw;
+        background-color: #fff;
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .page:before {
+        bottom: 15vh;
+        border-radius: 45%;
+        animation-duration: 15s;
+    }
+
+    .page:after {
+        bottom: 12vh;
+        opacity: .5;
+        border-radius: 47%;
+        animation-duration: 15s;
+    }
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+    100% {
+        transform: translate(-50%, 0%) rotateZ(360deg);
+    }
+}

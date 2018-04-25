@@ -1,0 +1,12 @@
+<view class="zan-panel-title">查询结果</view>
+<view class="zan-panel">
+  <view class="zan-cell" wx:for="{{cets}}" wx:key="ZKZH" wx:for-item="cet">
+    <view class="zan-cell__bd">
+      <view class="zan-cell__text zan-font-16">
+        {{cet.Time}}
+      </view>
+      <view class="zan-cell__desc">{{cet.Type=='1'?'CET4':'CET6'}}  考号：{{cet.ZKZH}}</view>      
+    </view>
+    <view class="zan-cell__ft cet-grade" style="background-color:{{cet.Grade>=425?'#06bf04':'#f44'}}">{{cet.Grade}}</view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+@import '../../wxParser/index.wxss';
+.wxParser{
+  margin: 10px;
+  text-indent:2em;
+  line-height:1.5em;
+}

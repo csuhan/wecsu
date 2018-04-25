@@ -1,0 +1,30 @@
+.page{
+   background-color: #eee; 
+   min-height: 100vh;
+}
+.header{
+  margin: 40rpx;
+  height: 100rpx;
+  display: inline-flex;
+  align-items:center; 
+  align-content: center;
+  justify-content: space-between
+}
+.title{
+  font-size: 50rpx;
+  color: #aa00ff;
+}
+.header image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.term-icon{
+  color: #aa00ff;
+}
+.rank-item{
+  text-align: center;
+  margin: 20rpx auto;
+}
+.rank-item-content{
+  font-size: 50rpx;
+}

@@ -1,0 +1,6 @@
+  <view class="page">
+    <view class="header">
+      <view><image src="/imgs/lib/mark@dark.png"></image></view>    
+      <view class="title">馆藏查询</view>
+    </view>
+  </view>

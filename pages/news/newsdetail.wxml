@@ -1,0 +1,10 @@
+<import src="../../wxParser/index.wxml"/> 
+<view class="wxParser">
+<template is="wxParser" data="{{wxParserData:article_html.nodes}}"/>
+</view>
+<view class="zan-cell zan-cell--access" wx:if="{{article_html!=''}}">
+  <view class="zan-cell__bd"></view>
+  <view class="zan-cell__ft zan-c-green" bindtap='showOrigin'>查看原文</view>
+</view>
+
+

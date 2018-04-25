@@ -1,0 +1,11 @@
+.page{
+   background-color: #eee; 
+   min-height: 100vh;
+}
+.question{
+  position: fixed;
+  top: 13px;
+  right: 40rpx;
+  z-index: 999;
+  color:#1659c3;
+}

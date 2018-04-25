@@ -1,0 +1,44 @@
+<import src="/zan/field/index.wxml" />
+<view class="page">
+<view class="zan-icon zan-icon-question question" bindtap='showQuestion'></view>
+  <form bindsubmit='saveSetting' report-submit='true'>
+    <view class="zan-panel-title">学号</view>
+    <view class="zan-panel">
+      <template
+            is="zan-field"
+            data="{{ ...config.xuehao }}"></template>
+    </view>
+    <view class="zan-panel-title">教务系统</view>
+    <view class="zan-panel">
+      <template
+            is="zan-field"
+            data="{{ ...config.xuehao }}"></template>
+      <template
+            is="zan-field"
+            data="{{ ...config.jwpwd }}"></template>
+    </view>
+    <view class="zan-panel-title">信息门户</view>  
+    <view class="zan-panel">
+      <template
+            is="zan-field"
+            data="{{ ...config.xuehao }}"></template>
+      <template
+            is="zan-field"
+            data="{{ ...config.xxmh }}"></template>
+    </view>
+    <view class="zan-panel-title">图书馆</view>  
+    <view class="zan-panel">
+      <template
+            is="zan-field"
+            data="{{ ...config.xuehao }}"></template>
+      <template
+            is="zan-field"
+            data="{{ ...config.tsg }}"></template>
+    </view>
+    <view class="zan-btns">
+      <button class="zan-btn zan-btn--primary" formType="submit">保存设置</button>
+    </view>
+  </form>
+
+</view>
+

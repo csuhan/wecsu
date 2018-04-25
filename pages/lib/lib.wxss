@@ -1,0 +1,45 @@
+.page{
+   background-color: #eee; 
+   min-height: 100vh;
+}
+.header{
+  margin: 40rpx;
+  height: 100rpx;
+  display: inline-flex;
+  align-items:center; 
+  align-content: center;
+  justify-content: space-between
+}
+.title{
+  font-size: 50rpx;
+  color: #304ffe;
+}
+.header image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.lib-box{
+  background:#304ffe;
+  margin: 40rpx;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  color: white;
+}
+.lib-item-left image{
+  width: 100rpx;
+  height:100rpx;
+}
+.lib-item-text{
+  line-height: 100rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  text-align: center;
+}
+.lib-item-right{
+  width: 100rpx;
+  height:100rpx;
+}
+.lib-item-right image{
+  width: 100rpx;
+  height: 100rpx;
+}

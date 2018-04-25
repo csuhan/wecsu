@@ -1,0 +1,64 @@
+  <view class="page">
+    <view class="header">
+      <view><image src="/imgs/lib/loan@dark.png"></image></view>    
+      <view class="title">图书续借</view>
+    </view>
+    <view wx:if="{{books.length!=0}}">
+      <view class="zan-panel-title">已借图书</view>
+      <view class="zan-panel">
+        <view class="zan-cell zan-cell--access" wx:for="{{books}}" wx:key="BarCode" wx:for-item="book">
+          <view class="zan-cell__icon zan-icon zan-icon-{{checkedBooks[index]==true?'checked':'check'}} " style="font-size:40rpx;color:#304ffe;" bindtap="checkbook"  data-id="{{index}}"></view>
+            <view class="zan-cell__bd" bindtap="showBookDetail" data-id="{{index}}">
+              <view class="zan-cell__text">{{book.BookName}}</view>
+              <view class="zan-cell__desc">{{book.ReturnedDate}}到期</view>          
+            </view>
+            <view class="zan-cell__ft">
+          </view>
+        </view>
+      </view>
+      <view class="zan-panel">
+        <view class="zan-btns">
+          <button class="zan-btn" bindtap="checkAll">全选</button>
+          <button class="zan-btn  zan-btn-plain btn-borrow" bindtap="reloan">续借</button>
+        </view>
+      </view>   
+    </view>
+    <view wx:if="{{hasNoBook==true}}" class="zan-panel">
+      <view class="zan-cell">您暂时没有借书哦</view>
+    </view>
+    <view class="zan-popup {{showMark?'zan-popup--show':''}} zan-popup--bottom">
+      <view class="zan-popup__mask" bindtap='hideMark'></view>
+      <view class="zan-popup__container">
+        <view class="zan-panel-title zan-font-12">图书信息</view>
+        <view class="zan-panel">
+          <view class="zan-cell">
+            {{popupBook.BookName}}
+          </view>
+          <view class="zan-row  lib-pop-item">
+            <view class="zan-col zan-col-12">
+              <view class="zan-cell__bd">条形码</view>
+              <view class="zan-cell__ft">{{popupBook.BarCode}}</view>    
+            </view>
+            <view class="zan-col zan-col-12">
+              <view class="zan-cell__bd">索取号</view>
+              <view class="zan-cell__ft">{{popupBook.BookNo}}</view>    
+            </view>
+          </view>
+          <view class="zan-row lib-pop-item">
+            <view class="zan-col zan-col-12">
+              <view class="zan-cell__bd">借出日期</view>
+              <view class="zan-cell__ft">{{popupBook.BorrowedDate}}</view>    
+            </view>
+            <view class="zan-col zan-col-12">
+              <view class="zan-cell__bd">归还日期</view>
+              <view class="zan-cell__ft">{{popupBook.ReturnedDate}}</view>    
+            </view>
+          </view>
+          <view class="zan-cell">
+            <view class="zan-cell__bd">作者</view>
+            <view class="zan-cell__ft">{{popupBook.Author}}</view>    
+          </view>
+        </view>
+      </view>
+    </view>  
+  </view>
