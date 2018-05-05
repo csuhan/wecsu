@@ -1,0 +1,9 @@
+<view class="about-page">
+  <view class="about-me">
+    <image src='/imgs/me/me.jpeg'></image>
+    <view class="name">@csuhan</view>
+  </view>
+  <view class="zan-font-16 about-intro">本项目旨在练习Go语言Web开发，目前代码已在Github开源，你可以参考或者直接使用其中的片段。详情可以参见我的博客。</view>
+  <view class="about-item">博客:<view class="link" bindtap='cplink' id='https://lovesmg.cn'>https://lovesmg.cn</view></view>
+  <view class="about-item">Github:<view class="link" id="https://github.com/csuhan" bindtap='cplink'>https://github.com/csuhan</view></view>
+</view>

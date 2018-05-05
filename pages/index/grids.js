@@ -1,4 +1,13 @@
-module.exports = [{
+module.exports = [
+{
+  name: "课表查询",
+  url: "/pages/class/class",
+  icon: "/imgs/index/class.png",
+  color: "#ef5350",
+  needAuth: true,
+  authType: "jwc"
+},
+{
   name: "成绩查询",
   url: "/pages/grade/grade",
   icon: "/imgs/index/grade.png",
@@ -23,6 +32,12 @@ module.exports = [{
   authType: "jwc"
 },
 {
+  name: "校园卡",
+  url: "",
+  icon: "/imgs/index/schoolcard.png",
+  color: "#2962FF"
+},
+{
   name: "图书馆",
   url: "/pages/lib/lib",
   icon: "/imgs/index/library.png",
@@ -43,10 +58,22 @@ module.exports = [{
   color: "#00bfa5"
 },
 {
+  name: "资讯通知",
+  url: "/pages/news/news",
+  icon: "/imgs/index/news.png",
+  color: "#00BFA5"
+},
+{
   name: "招聘查询",
   url: "/pages/hire/hire",
   icon: "/imgs/index/hire.png",
   color: "#00c853"
+},
+{
+  name: "校历查询",
+  url: "",
+  icon: "/imgs/index/calendar.png",
+  color: "#aeea00"
 },
 {
   name: "四六级",
@@ -59,6 +86,12 @@ module.exports = [{
   url: "/pages/ncre/ncre",
   icon: "/imgs/index/ncre.png",
   color: "#aeea00"
+},
+{
+  name: "报修",
+  url: "",
+  icon: "/imgs/index/repair.png",
+  color: "#64DD17"
 },
 {
   name: "敬请期待",

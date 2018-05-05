@@ -1,5 +1,7 @@
+
 .app-page{
-   background-color: #eee; 
+    /* background-color: #eee;   */
+   min-height: 100vh;
 }
 .app-hd{
   background-color: white;
@@ -42,7 +44,4 @@
   font-size: 16px;
   color: #d4237a;
   margin-right: 20px;
-}
-.app-class-content{
-
 }

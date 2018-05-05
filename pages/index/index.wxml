@@ -5,28 +5,4 @@
     <view class="app-grid__label">{{grid.name}}</view>
   </view>
 </view>
-<!-- <view class="zan-panel zan-panel--without-border app-warper">
-  <view class="zan-cell">
-    <image src="/imgs/class/class.png" class="app-logo" style="background-color:#d4237a;"></image>
-    <view class="zan-cell_bd">今日课表</view>
-  </view>
-  <view class="app-class-content">
-    <view class="zan-cell" wx:for="{{[1,2,3,4]}}">
-      <view class="app-class-no">{{item*2-1}}-{{item*2}}</view>
-      <view class="zan-cell__bd">
-      <view class="zan-cell__text">
-        雷达干涉测量
-      </view>
-      <view class="zan-cell__desc">
-      <view class="zan-icon zan-icon-clock"></view>
-      8:00-9:40
-      <view class="zan-icon zan-icon-location"></view>
-      B305
-      </view>
-      </view>
-    </view>
-  </view>
-
-</view> -->
-<view style='width:100%;height:1200rpx;'> </view>
 </view>

@@ -1,1 +1,30 @@
-/* pages/me/about.wxss */
+.about-page{
+  margin: 20rpx;
+  color: #838383;
+}
+.about-intro{
+  margin-top: 50rpx;
+  text-indent: 32px;
+}
+.about-item{
+  font-size: 16px;
+  margin: 10px 32px;
+}
+.link{
+  display: inline;
+  color: rgb(71, 165, 205);
+  margin-left: 5rpx;
+}
+.about-me{
+  text-align: center;
+  margin: 20px auto;
+}
+.about-me image{
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+}
+.about-me .name{
+  font-size: 16px;
+  margin-top: 20rpx;
+}

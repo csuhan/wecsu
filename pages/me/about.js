@@ -7,7 +7,17 @@ Page({
   data: {
   
   },
-
+  cplink:function(e){
+    console.log(e)
+    wx.setClipboardData({
+      data: e.target.id,
+      success:function(){
+        wx.showToast({
+          title: '链接已复制',
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

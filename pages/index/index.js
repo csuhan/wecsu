@@ -51,6 +51,11 @@ Page({
           if(_this.checkAccount(res.data,_iapp.authType)){
             wx.navigateTo({
               url: _iapp.url,
+              fail:function(e){
+                wx.switchTab({
+                  url: _iapp.url,
+                })
+              }
             })
           }
         },
@@ -63,6 +68,11 @@ Page({
     }else{
       wx.navigateTo({
         url: iapp.url,
+        fail: function (e) {
+          wx.switchTab({
+            url: iapp.url,
+          })
+        }
       })
     }
   },
